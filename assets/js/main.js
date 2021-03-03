@@ -54,7 +54,7 @@
 				$('header').addClass('visible');
 				
 				$(".carousel").slick({
-					autoplaySpeed: 5000,
+					autoplaySpeed: 3500,
 					dots: false,
 					arrows: false,
 					autoplay: true,
