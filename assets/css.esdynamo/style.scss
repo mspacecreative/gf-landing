@@ -251,6 +251,8 @@ header.shrink .inner_container {
 	padding: 10px;
 	font-family: 'Mulish',sans-serif;
 	font-size: 13px;
+	-webkit-border-radius: none;
+	border-radius: none;
 }
 .quote_form .col input, .quote_form .col textarea {
 	width: 100%;
@@ -261,6 +263,8 @@ header.shrink .inner_container {
 	font-family: 'Mulish',sans-serif;
 	margin-bottom: 2em;
 	font-size: 13px;
+	-webkit-border-radius: none;
+	border-radius: none;
 }
 .quote_form .col textarea {
 	margin-bottom: 0;
