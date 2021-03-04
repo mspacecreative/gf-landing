@@ -7,7 +7,7 @@ $brand_red: #db4934;
 @import "_main.scss";
 @import "_flexboxgrid.min.scss";
 @import "_slick.scss";
-@import "_media-queries.scss";
+@import "_footer.scss";
 
 * {
 	-webkit-box-sizing: border-box;
@@ -557,42 +557,6 @@ p ~ .button {
 	width: 9999px;
 }
 
-// FOOTER
-footer {
-	background-color: $brand_dark;
-}
-.footer_links {
-	padding: 0;
-	list-style: none;
-	margin: 0;
-}
-.footer_links li {
-	margin-bottom: .5em;
-}
-.footer_links a {
-	text-decoration: none;
-	position: relative;
-	transition: .25s ease-in-out;
-}
-.footer_links a::after {
-	height: 1px;
-	background-color: #999;
-	position: absolute;
-	top: 100%;
-	left: 0;
-	content: "";
-	width: 0;
-	transition: .25s ease-in-out;
-}
-.footer_links a:hover {
-	color: #999;
-	transition: .25s ease-in-out;
-}
-.footer_links a:hover::after {
-	width: 100%;
-	transition: .25s ease-in-out;
-}
-
 // SOCIAL MEDIA
 .social_media {
 	display: flex;
@@ -619,3 +583,5 @@ footer {
 .credits p {
 	font-size: 13px;
 }
+
+@import "_media-queries.scss";
