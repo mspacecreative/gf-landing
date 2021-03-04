@@ -3,6 +3,20 @@
 
 	$(function () {
 		
+		// HIDE/SHOW HEADER ON SCROLL
+		var lastScrollTop = 0;
+		var delta = 5;
+	    $(window).on('scroll', function() {
+	        var st = $(this).scrollTop();
+	        if ( st < lastScrollTop )  {
+	            $('header').addClass('up').removeClass('down');
+	        }
+	        else if( st > lastScrollTop && st > delta ) {
+	            $('header').addClass('down').removeClass('up');
+	        }
+	        lastScrollTop = st;
+	    });
+		
 		// SMOOTH SCROLL TO ANCHORS
 		$('a[href*="#"]').not('[href="#"]').not('[href="#0"]').click(function() {
 			if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
