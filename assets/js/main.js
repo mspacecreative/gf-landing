@@ -89,6 +89,13 @@
 				});
 			}, 3000);
 			
+			$(".work-carousel").slick({
+				slidesToShow: 3,
+				slidesToScroll: 3,
+				infinite: false,
+				appendArrows: $('.view-all-work a'),
+			});
+			
 			/*
 			// KEN BURNS
 			var currentSlide = 0;
