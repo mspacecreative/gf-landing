@@ -2938,8 +2938,8 @@ header.shrink .inner_container {
 	padding: 10px;
 	font-family: 'Mulish',sans-serif;
 	font-size: 13px;
-	-webkit-border-radius: none;
-	border-radius: none;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
 }
 
 .quote_form .col input, .quote_form .col textarea {
@@ -2951,8 +2951,8 @@ header.shrink .inner_container {
 	font-family: 'Mulish',sans-serif;
 	margin-bottom: 2em;
 	font-size: 13px;
-	-webkit-border-radius: none;
-	border-radius: none;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
 }
 
 .quote_form .col textarea {
@@ -2965,6 +2965,8 @@ header.shrink .inner_container {
 	font-family: inherit;
 	color: #4D4D4D;
 	font-size: 15px;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
 }
 
 .quote_form input[type=submit] {

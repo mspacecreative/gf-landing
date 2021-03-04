@@ -251,8 +251,8 @@ header.shrink .inner_container {
 	padding: 10px;
 	font-family: 'Mulish',sans-serif;
 	font-size: 13px;
-	-webkit-border-radius: none;
-	border-radius: none;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
 }
 .quote_form .col input, .quote_form .col textarea {
 	width: 100%;
@@ -263,8 +263,8 @@ header.shrink .inner_container {
 	font-family: 'Mulish',sans-serif;
 	margin-bottom: 2em;
 	font-size: 13px;
-	-webkit-border-radius: none;
-	border-radius: none;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
 }
 .quote_form .col textarea {
 	margin-bottom: 0;
@@ -275,6 +275,8 @@ header.shrink .inner_container {
 	font-family: inherit;
 	color: $brand_dark;
 	font-size: 15px;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
 }
 .quote_form input[type=submit] {
 	width: auto;
