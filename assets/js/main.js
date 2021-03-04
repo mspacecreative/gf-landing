@@ -3,6 +3,9 @@
 
 	$(function () {
 		
+		// HERO HEIGHT
+		$('.splash').height($(window).height());
+		
 		// HIDE/SHOW HEADER ON SCROLL
 		var lastScrollTop = 0;
 		var delta = 5;

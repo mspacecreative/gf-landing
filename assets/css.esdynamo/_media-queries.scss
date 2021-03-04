@@ -8,13 +8,23 @@
 		margin-bottom: 2em;
 	}
 }
-@media (max-width: 768px) {
+@media (max-width: 64em) {
 	.work-carousel .col {
 	    padding: 0 10px;
+	}
+	.line-rule-right {
+	    padding: 0 0 0 10px;
+	    width: calc(100% - 10px);
 	}
 }
 @media (max-width: 480px) {
 	.justify-content-end {
 		justify-content: flex-start;
+	}
+	.logo {
+	    width: 125px;
+	}
+	.shrink .logo {
+		width: 60px;
 	}
 }
