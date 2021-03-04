@@ -2611,6 +2611,13 @@ src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/s
 	overflow: visible;
 }
 
+.append-arrows {
+	width: 108px;
+	height: 47px;
+	position: relative;
+	margin-right: 50px;
+}
+
 .work-carousel .slick-list .slick-track .slick-slide:not(.slick-active) {
 	opacity: .2;
 }
@@ -2620,12 +2627,15 @@ src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/s
 }
 
 .view-all-work .slick-prev {
-	right: calc(100% + 94px);
-	left: auto;
+	left: 0;
 }
 
 .view-all-work .slick-next {
-	right: calc(100% + 30px);
+	right: 0;
+}
+
+.view-all-work .button {
+	margin-top: 0;
 }
 
 .view-all-work .slick-prev, .view-all-work .slick-next {
@@ -2668,21 +2678,22 @@ header {
 	position: fixed;
 	width: 100%;
 	z-index: 999;
-	transition: 2s ease-in-out;
+	transition: 1s ease-in-out;
 	transform: translate(0, -100%);
 }
 
 header.visible {
 	transform: translate(0, 0);
-	transition: 2s ease-in-out;
+	transition: 1s ease-in-out;
 }
 
 .shrink .logo {
-	width: 60px;
+	width: 90px;
 	transition: .5s ease-in-out;
 }
 
 .logo {
+	width: 170px;
 	transition: .5s ease-in-out;
 }
 
@@ -2905,6 +2916,7 @@ header.shrink .inner_container {
 	border-bottom: 2px solid #4D4D4D;
 	padding: 10px;
 	font-family: 'Mulish',sans-serif;
+	font-size: 13px;
 }
 
 .quote_form .col input, .quote_form .col textarea {
@@ -2915,6 +2927,7 @@ header.shrink .inner_container {
 	padding: 10px;
 	font-family: 'Mulish',sans-serif;
 	margin-bottom: 2em;
+	font-size: 13px;
 }
 
 .quote_form .col textarea {
@@ -2926,6 +2939,7 @@ header.shrink .inner_container {
 	padding: 15px 20px 13px;
 	font-family: inherit;
 	color: #4D4D4D;
+	font-size: 15px;
 }
 
 .quote_form input[type=submit] {
@@ -3056,7 +3070,7 @@ section {
 
 .testimonial p {
 	font-style: italic;
-	line-height: 1.75em;
+	line-height: 2.25em;
 }
 
 .testimonial .col:nth-of-type(2) {
@@ -3176,9 +3190,14 @@ p {
 	margin: 1em 0;
 }
 
-h3 {
+h2 {
 	font-weight: 300;
-	font-size: 24px;
+	font-size: 26px;
+}
+
+h3 {
+	font-weight: 200;
+	font-size: 23px;
 	margin-bottom: 1em;
 }
 

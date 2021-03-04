@@ -73,12 +73,12 @@
 				$('header').addClass('visible');
 				
 				$(".carousel").slick({
-					autoplaySpeed: 3500,
+					autoplaySpeed: 3000,
 					dots: false,
 					arrows: false,
 					autoplay: true,
 					fade: true,
-					speed: 5000,
+					speed: 2000,
 					pauseOnHover: false,
 					//adaptiveHeight: true,
 					//appendDots: $('.slick-dot-anchor'),
@@ -87,13 +87,13 @@
 					//return '<a class="deeper-dive-carousel-nav">'+(i+1)+'</a>';
 					//},
 				});
-			}, 3000);
+			}, 1500);
 			
 			$(".work-carousel").slick({
 				slidesToShow: 3,
 				slidesToScroll: 3,
 				infinite: false,
-				appendArrows: $('.view-all-work a'),
+				appendArrows: $('.append-arrows'),
 			});
 			
 			/*

@@ -23,18 +23,19 @@ header {
 	position: fixed;
 	width: 100%;
 	z-index: 999;
-	transition: 2s ease-in-out;
+	transition: 1s ease-in-out;
 	transform: translate(0, -100%);
 }
 header.visible {
 	transform: translate(0, 0);
-	transition: 2s ease-in-out;
+	transition: 1s ease-in-out;
 }
 .shrink .logo {
-	width: 60px;
+	width: 90px;
 	transition: .5s ease-in-out;
 }
 .logo {
+	width: 170px;
 	transition: .5s ease-in-out;
 }
 .header_backdrop {
@@ -235,6 +236,7 @@ header.shrink .inner_container {
 	border-bottom: 2px solid $brand_dark;
 	padding: 10px;
 	font-family: 'Mulish',sans-serif;
+	font-size: 13px;
 }
 .quote_form .col input, .quote_form .col textarea {
 	width: 100%;
@@ -244,6 +246,7 @@ header.shrink .inner_container {
 	padding: 10px;
 	font-family: 'Mulish',sans-serif;
 	margin-bottom: 2em;
+	font-size: 13px;
 }
 .quote_form .col textarea {
 	margin-bottom: 0;
@@ -253,6 +256,7 @@ header.shrink .inner_container {
 	padding: 15px 20px 13px;
 	font-family: inherit;
 	color: $brand_dark;
+	font-size: 15px;
 }
 .quote_form input[type=submit] {
 	width: auto;
@@ -369,7 +373,7 @@ section {
 }
 .testimonial p {
 	font-style: italic;
-	line-height: 1.75em;
+	line-height: 2.25em;
 }
 .testimonial .col:nth-of-type(2) {
 	border-left: 1px solid rgba(255, 255, 255, .65);
@@ -481,9 +485,13 @@ p {
 .row_with_icons h3 {
 	margin: 1em 0;
 }
-h3 {
+h2 {
 	font-weight: 300;
-	font-size: 24px;
+	font-size: 26px;
+}
+h3 {
+	font-weight: 200;
+	font-size: 23px;
 	margin-bottom: 1em;
 }
 .no-margin {

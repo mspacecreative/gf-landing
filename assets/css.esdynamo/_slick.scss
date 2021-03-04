@@ -330,6 +330,13 @@
 	overflow: visible;
 }
 
+.append-arrows {
+	width: 108px;
+	height: 47px;
+	position: relative;
+	margin-right: 50px;
+}
+
 .work-carousel .slick-list .slick-track .slick-slide:not(.slick-active) {
 	opacity: .2;
 }
@@ -337,11 +344,14 @@
 	padding: 0 30px;
 }
 .view-all-work .slick-prev {
-	right: calc(100% + 94px);
-	left: auto;
+	left: 0;
 }
 .view-all-work .slick-next {
-	right: calc(100% + 30px);
+	right: 0;
+}
+
+.view-all-work .button {
+	margin-top: 0;
 }
 
 .view-all-work .slick-prev, .view-all-work .slick-next {
