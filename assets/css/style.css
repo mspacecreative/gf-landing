@@ -3094,11 +3094,11 @@ section {
 
 .col_icon {
 	position: absolute;
-	top: -40px;
+	top: -35px;
 	left: 50%;
-	width: 80px;
-	height: 80px;
-	margin-left: -40px;
+	width: 70px;
+	height: 70px;
+	margin-left: -35px;
 	background-color: #fff;
 }
 
@@ -3107,7 +3107,7 @@ section {
 }
 
 .col_icon img {
-	padding: 0 15px;
+	padding: 0 10px;
 	width: 100%;
 	height: 100%;
 }
@@ -3350,12 +3350,6 @@ p ~ .button {
 	}
 }
 
-@media (max-width: 48em) {
-	.mobile_margin_bottom_2em {
-		margin-bottom: 2em;
-	}
-}
-
 @media (max-width: 64em) {
 	.work-carousel .col {
 		padding: 0 10px;
@@ -3364,6 +3358,26 @@ p ~ .button {
 	.line-rule-right {
 		padding: 0 0 0 10px;
 		width: calc(100% - 10px);
+	}
+	
+	.testimonial .col:nth-of-type(2) {
+		border-left: none;
+	}
+	
+	.instagram-gallery .col {
+		padding-bottom: 10px;
+	}
+	
+	.row_with_icons .col {
+		padding-bottom: 35px;
+	}
+	
+	.cta .justify-content-end, .quote_form .justify-content-end {
+		flex-direction: column;
+	}
+	
+	.mobile_margin_bottom_2em {
+		margin-bottom: 2em;
 	}
 }
 
@@ -3378,5 +3392,13 @@ p ~ .button {
 	
 	.shrink .logo {
 		width: 60px;
+	}
+	
+	.fixed-tagline, .header-transition > .fixed-tagline {
+		height: 46px;
+	}
+	
+	.splash_title {
+		font-size: 33px;
 	}
 }
