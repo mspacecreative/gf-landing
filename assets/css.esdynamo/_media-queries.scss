@@ -3,3 +3,8 @@
 		padding-left: 6em;
 	}
 }
+@media (max-width: 768px) {
+	.work-carousel .col {
+	    padding: 0 10px;
+	}
+}

@@ -2664,6 +2664,12 @@ src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/s
 	}
 }
 
+@media (max-width: 768px) {
+	.work-carousel .col {
+		padding: 0 10px;
+	}
+}
+
 * {
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
