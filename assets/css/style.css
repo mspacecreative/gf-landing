@@ -2985,6 +2985,7 @@ header.shrink .inner_container {
 	font-weight: 400;
 	margin-top: 1em;
 	position: relative;
+	font-family: 'Josefin Sans', sans-serif;
 }
 
 section {
@@ -3196,10 +3197,9 @@ p, a, ul {
 }
 
 .work-carousel h4 {
-	color: #c9c9c9;
+	color: #db4934;
 	margin-top: 1.5em;
-	font-size: 14px;
-	letter-spacing: .15em;
+	font-size: 15px;
 }
 
 .view-all-work {
@@ -3327,6 +3327,7 @@ footer {
 .credits {
 	background-color: #333;
 	padding: 1em 0;
+	border-top: 1px solid #666;
 }
 
 .credits p {

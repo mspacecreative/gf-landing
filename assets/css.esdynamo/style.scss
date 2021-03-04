@@ -1,5 +1,6 @@
 $brand_light_grey: #EAEAEA;
 $brand_dark: #4D4D4D;
+$brand_red: #db4934;
 
 @import "_aos.scss";
 @import "_normalize.min.scss";
@@ -298,6 +299,7 @@ header.shrink .inner_container {
 	font-weight: 400;
 	margin-top: 1em;
 	position: relative;
+	font-family: 'Josefin Sans', sans-serif;
 }
 section {
 	position: relative;
@@ -490,10 +492,10 @@ p, a, ul {
 }
 
 .work-carousel h4 {
-	color: #c9c9c9;
+	color: $brand_red;
 	margin-top: 1.5em;
-	font-size: 14px;
-	letter-spacing: .15em;
+	font-size: 15px;
+	//letter-spacing: .15em;
 }
 .view-all-work {
 	width: 100%;
@@ -602,6 +604,7 @@ footer {
 .credits {
 	background-color: #333;
 	padding: 1em 0;
+	border-top: 1px solid #666;
 }
 .credits p {
 	font-size: 13px;
