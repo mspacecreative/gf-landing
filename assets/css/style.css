@@ -2852,17 +2852,17 @@ header.shrink .inner_container {
 }
 
 .ghost.reveal {
-	visibility: visible;
+	color: #4D4D4D;
+}
+
+.ghost {
+	white-space: nowrap;
 }
 
 .header-transition {
 	position: relative;
 	overflow: hidden;
-	z-index: 2;
-}
-
-.header-transition > .fixed-tagline {
-	visibility: hidden;
+	z-index: 10;
 }
 
 .header-transition > .inner_container.transition {
@@ -2876,7 +2876,7 @@ header.shrink .inner_container {
 	transform: translate(-50%, -50%);
 	width: 100%;
 	height: 84px;
-	z-index: 1;
+	z-index: 10;
 }
 
 .inner_container.relative_positioning {
@@ -2898,7 +2898,11 @@ header.shrink .inner_container {
 }
 
 .splash_title.white-text.ghost {
-	color: #000;
+	color: #fff;
+}
+
+.splash_title.white-text.ghost.switch {
+	color: #4D4D4D;
 }
 
 .splash_title.white-text.ghost.reveal {
@@ -3436,8 +3440,33 @@ p ~ .button {
 		flex-direction: column;
 	}
 	
+	.quote_form .justify-content-end {
+		align-items: flex-end;
+	}
+	
 	.mobile_margin_bottom_2em {
 		margin-bottom: 2em;
+	}
+	
+	.cta .mobile_margin_bottom_2em {
+		margin-bottom: 0;
+	}
+}
+
+@media (max-width: 48em) {
+	.cta .mobile_margin_bottom_2em {
+		margin-bottom: 2em;
+	}
+}
+
+@media (max-width: 850px) and (orientation: landscape) {
+	.justify-content-xs-end {
+		display: flex;
+		justify-content: flex-end;
+	}
+	
+	.subscribe_form input[type=submit] {
+		border-top: none;
 	}
 }
 
@@ -3462,30 +3491,29 @@ p ~ .button {
 		font-size: 33px;
 	}
 	
-	.subscribe_form > .col:first-of-type {
-		flex: 0 0 66.66666667%;
-		max-width: 66.66666667%;
+	.justify-content-xs-end {
+		display: flex;
+		justify-content: flex-end;
 	}
 	
-	.subscribe_form > .col:last-of-type {
-		flex: 0 0 33.33333333%;
-		max-width: 33.33333333%;
+	.subscribe_form input[type=submit] {
+		border-top: none;
 	}
 }
 
+/*
 @media (max-width: 350px) {
 	.subscribe_form > .col:first-of-type {
 		flex: 0 0 58.33333333%;
 		max-width: 58.33333333%;
 	}
-	
 	.subscribe_form > .col:last-of-type {
 		flex: 0 0 41.66666667%;
 		max-width: 41.66666667%;
 	}
-	
 	.subscribe_form input[type=submit] {
 		padding-left: 10px;
 		padding-right: 10px;
 	}
 }
+*/

@@ -136,15 +136,15 @@ header.shrink .inner_container {
 	display: none;
 }
 .ghost.reveal {
-	visibility: visible;
+	color: $brand_dark;
+}
+.ghost {
+	white-space: nowrap;
 }
 .header-transition {
 	position: relative;
 	overflow: hidden;
-	z-index: 2;
-}
-.header-transition > .fixed-tagline {
-	visibility: hidden;
+	z-index: 10;
 }
 .header-transition > .inner_container.transition {
 	visibility: visible;
@@ -156,7 +156,7 @@ header.shrink .inner_container {
     transform: translate(-50%, -50%);
     width: 100%;
     height: 84px;
-	z-index: 1;
+	z-index: 10;
 }
 .inner_container.relative_positioning {
 	position: relative;
@@ -174,7 +174,10 @@ header.shrink .inner_container {
 	transition: 5s ease-in-out;
 }
 .splash_title.white-text.ghost {
-	color: #000;
+	color: #fff;
+}
+.splash_title.white-text.ghost.switch {
+	color: $brand_dark;
 }
 .splash_title.white-text.ghost.reveal {
 	visibility: visible;

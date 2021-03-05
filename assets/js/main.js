@@ -4,7 +4,9 @@
 	$(function () {
 		
 		// HERO HEIGHT
-		$('.splash').height($(window).height());
+		function heroHeight() {
+			$('.splash').height($(window).height());
+		}
 		
 		// HIDE/SHOW HEADER ON SCROLL
 		var lastScrollTop = 0;
@@ -38,6 +40,11 @@
 		
 		$(function() {
 			
+			heroHeight();
+			$(window).resize(function() {
+				heroHeight();
+			});
+			
 			/*
 			$(window).scroll(function(){
 				$(".original").css({
@@ -58,12 +65,12 @@
 					$('body').addClass('scroll');
 					//$('.ghost').addClass('reveal');
 					$('.header-transition > .inner_container').addClass('transition');
-					$('.original').addClass('hide');
+					$('.ghost').addClass('switch');
 				} else {
 				    //$('.ghost').removeClass('reveal');
 					$('.header-transition > .inner_container').removeClass('transition');
 					$('body').removeClass('scroll');
-					$('.original').removeClass('hide');
+					$('.ghost').removeClass('switch');
 				} 
 				if ( $document.scrollTop() >= viewportHeight + 100) {
 					$('.header-transition > .inner_container').addClass('relative_positioning');
@@ -86,7 +93,7 @@
 			setTimeout(function() {
 				
 				$('.static_img, .blur_overlay').addClass('fade_out');
-				$('.original').addClass('white-text');
+				$('.ghost').addClass('white-text');
 				$('header').addClass('visible');
 				
 				$(".carousel").slick({
