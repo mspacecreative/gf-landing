@@ -447,6 +447,9 @@ section {
 	padding: 2em;
 	height: 100%;
 }
+.col_inner.padding-3em {
+	padding: 3em;
+}
 .col_borders .col_inner {
 	border: 2px solid #D8D8D8;
 }
@@ -548,6 +551,58 @@ p ~ .button {
 	height: 1px;
 	background-color: $brand_light_grey;
 	width: 9999px;
+}
+
+// BEFORE + AFTERS
+.before_and_after .row {
+	position: relative;
+}
+.before_and_after .row::after {
+	position: absolute;
+	content: "";
+	bottom: -23px;
+	width: 60%;
+	left: 50%;
+	transform: translate(-50%, 0);
+	height: 1px;
+	background-color: #cbcbcb;
+}
+/*
+.before_and_after .row::before {
+	position: absolute;
+	content: "";
+	background-image: url(../img/icons/arrow-head.svg);
+	width: 7px;
+	height: 11px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	bottom: -28px;
+    right: calc(0px + 20.4%);
+}
+*/
+.after {
+	position: relative;
+}
+.after::before {
+	position: absolute;
+	content: "";
+	background-image: url(../img/icons/arrow-head.svg);
+	width: 7px;
+	height: 11px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	top: 9px;
+    right: 100%;
+}
+.before_and_after img ~ p {
+	margin-top: 0.5em;
+	display: inline-block;
+	padding: 0 2em;
+	background-color: #fff;
+	position: relative;
+	z-index: 1;
 }
 
 // SOCIAL MEDIA
