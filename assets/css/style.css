@@ -2861,7 +2861,6 @@ header.shrink .inner_container {
 
 .header-transition {
 	position: relative;
-	overflow: hidden;
 	z-index: 10;
 }
 
