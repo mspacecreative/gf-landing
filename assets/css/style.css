@@ -3485,6 +3485,10 @@ p ~ .button {
 	.subscribe_form input[type=submit] {
 		border-top: none;
 	}
+	
+	.splash_title {
+		font-size: 30px;
+	}
 }
 
 /*
