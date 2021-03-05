@@ -2835,7 +2835,7 @@ header.shrink .inner_container {
 
 .splash_title {
 	margin: 0;
-	font-size: 60px;
+	font-size: 40px;
 	font-weight: normal;
 	z-index: 4;
 	transition: 5s ease-in-out;
@@ -2856,7 +2856,11 @@ header.shrink .inner_container {
 }
 
 .ghost {
-	white-space: nowrap;
+	text-transform: uppercase;
+	background-color: rgba(0, 0, 0, 0.75);
+	padding: .75em .85em .6em;
+	line-height: 1.25em;
+	text-align: center;
 }
 
 .header-transition {
@@ -2880,28 +2884,33 @@ header.shrink .inner_container {
 
 .inner_container.relative_positioning {
 	position: relative;
-	margin-top: 58px;
+	margin-top: 88px;
 	left: auto;
 	bottom: auto;
 	transform: none;
 	transition: none;
 }
 
+.intro_container.relative_positioning {
+	margin-top: 30px;
+}
+
 .inner_container.relative_positioning .splash_title {
 	position: relative;
 }
 
-.splash_title.white-text {
+.splash_title {
 	color: #fff;
 	transition: 5s ease-in-out;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 100;
+	letter-spacing: .06em;
 }
 
-.splash_title.white-text.ghost {
-	color: #fff;
-}
-
-.splash_title.white-text.ghost.switch {
+.splash_title.switch {
 	color: #4D4D4D;
+	background-color: transparent;
+	padding: 0;
 }
 
 .splash_title.white-text.ghost.reveal {
@@ -2948,7 +2957,7 @@ header.shrink .inner_container {
 	position: absolute;
 	bottom: 50px;
 	left: 50%;
-	margin-left: -24px;
+	margin-left: -13.5px;
 	z-index: 2;
 }
 
@@ -2957,11 +2966,11 @@ header.shrink .inner_container {
 }
 
 .intro_container.relative_positioning {
-	margin-top: 0;
+	padding-top: 0;
 }
 
 .intro_container {
-	margin-top: 141px;
+	padding-top: 201px;
 }
 
 .subscribe_form {
