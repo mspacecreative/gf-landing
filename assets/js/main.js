@@ -72,7 +72,7 @@
 					$('body').removeClass('scroll');
 					$('.ghost').removeClass('switch');
 				} 
-				if ( $document.scrollTop() >= viewportHeight + 100) {
+				if ( $document.scrollTop() >= viewportHeight + 80) {
 					$('.header-transition > .inner_container').addClass('relative_positioning');
 					$('.intro_container').addClass('relative_positioning');
 				} else {

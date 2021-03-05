@@ -121,37 +121,26 @@ header.shrink .inner_container {
 	justify-content: center;
 }
 .splash_title {
-	margin: 0;
-	font-size: 40px;
-	font-weight: normal;
-	z-index: 4;
-	transition: 5s ease-in-out;
+	margin: 0 0 25px;
+	font-size: 35px;
+	color: #fff;
+	font-family: 'Poppins', sans-serif;
+	transition: .25s ease-in-out;
 	position: fixed;
-	font-weight: 200;
+	font-weight: 100;
+	letter-spacing: .06em;
+	text-transform: uppercase;
+	background-color: rgba(30, 30, 30, 0.5);
+	padding: .75em 1em;
+	line-height: 1.25em;
+	text-align: center;
 }
 .scroll .splash {
 	z-index: 1;
 }
-.original.hide {
-	display: none;
-}
-.ghost.reveal {
-	color: $brand_dark;
-}
-.ghost {
-	//white-space: nowrap;
-	text-transform: uppercase;
-	background-color: rgba(0, 0, 0, .75);
-	padding: .75em .85em .6em;
-	line-height: 1.25em;
-	text-align: center;
-}
 .header-transition {
 	position: relative;
 	z-index: 10;
-}
-.header-transition > .inner_container.transition {
-	visibility: visible;
 }
 .header-transition > .fixed-tagline {
 	position: fixed;
@@ -159,34 +148,34 @@ header.shrink .inner_container {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
-    height: 84px;
+    //height: 84px;
 	z-index: 10;
 }
 .inner_container.relative_positioning {
 	position: relative;
-    margin-top: 88px;
+    margin-top: 82px;
 	left: auto;
 	bottom: auto;
 	transform: none;
 	transition: none;
 }
 .intro_container.relative_positioning {
-	margin-top: 30px;
+	padding-top: 0;
+}
+.intro_container {
+	padding-top: 152px;
+}
+.intro_container.relative_positioning {
+	margin-top: 0px;
 }
 .inner_container.relative_positioning .splash_title {
 	position: relative;
-}
-.splash_title {
-	color: #fff;
-	transition: 5s ease-in-out;
-	font-family: 'Poppins', sans-serif;
-	font-weight: 100;
-	letter-spacing: .06em;
 }
 .splash_title.switch {
 	color: $brand_dark;
 	background-color: transparent;
 	padding: 0;
+	transition: .25s ease-in-out;
 }
 .splash_title.white-text.ghost.reveal {
 	visibility: visible;
@@ -236,12 +225,6 @@ header.shrink .inner_container {
 }
 .arrow_down a {
 	display: block;
-}
-.intro_container.relative_positioning {
-	padding-top: 0;
-}
-.intro_container {
-	padding-top: 201px;
 }
 
 // FORM
