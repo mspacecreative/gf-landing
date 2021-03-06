@@ -3420,7 +3420,7 @@ p ~ .button {
 		left: 0;
 	}
 	
-	.before_and_after .row::after {
+	.before_and_after .row::after, .after::before {
 		display: none;
 	}
 	
@@ -3502,6 +3502,7 @@ p ~ .button {
 	
 	.splash_title {
 		font-size: 30px;
+		width: 90%;
 	}
 }
 

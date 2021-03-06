@@ -21,7 +21,7 @@
 		color: #fff;
 		left: 0;
 	}
-	.before_and_after .row::after {
+	.before_and_after .row::after, .after::before {
 		display: none;
 	}
 	.testimonial .col:nth-of-type(2) {
@@ -87,6 +87,7 @@
 	}
 	.splash_title {
 		font-size: 30px;
+		width: 90%;
 	}
 }
 /*
