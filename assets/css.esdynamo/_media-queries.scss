@@ -33,6 +33,9 @@
 	.row_with_icons .col {
 		padding-bottom: 35px;
 	}
+	.row_with_icons .col:last-of-type {
+		padding-bottom: 0;
+	}
 	.cta .justify-content-end, .quote_form .justify-content-end {
 		flex-direction: column;
 		//align-items: flex-end;
