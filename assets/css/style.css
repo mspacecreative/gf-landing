@@ -3410,6 +3410,20 @@ p ~ .button {
 		width: calc(100% - 10px);
 	}
 	
+	.before_and_after img ~ p {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		padding: 40px 10px 10px;
+		background: linear-gradient(0deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+		color: #fff;
+		left: 0;
+	}
+	
+	.before_and_after .row::after {
+		display: none;
+	}
+	
 	.testimonial .col:nth-of-type(2) {
 		border-left: none;
 	}
