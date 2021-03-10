@@ -89,6 +89,16 @@
 			// ANIMATE ON SCROLL
 			AOS.init();
 			
+			setTimeout(function() {
+				
+				$('.splash_title').removeClass('aos-animate').addClass('move_right');
+			}, 2500);
+			
+			setTimeout(function() {
+				$('.fixed-tagline').addClass('move_right');
+				$('.move_right').addClass('aos-animate');
+			}, 5000);
+			
 			// SLICK CAROUSEL
 			setTimeout(function() {
 				

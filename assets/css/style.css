@@ -2843,10 +2843,19 @@ header.shrink .inner_container {
 	font-weight: 100;
 	letter-spacing: .06em;
 	text-transform: uppercase;
-	background-color: rgba(255, 255, 255, 0.65);
-	padding: .75em 1em;
 	line-height: 1.25em;
 	text-align: center;
+	position: relative;
+}
+
+.move_right .splash_title {
+	text-align: right;
+	color: #fff;
+	margin-bottom: 10px;
+}
+
+.move_right {
+	pointer-events: none;
 }
 
 .scroll .splash {
@@ -2865,6 +2874,15 @@ header.shrink .inner_container {
 	transform: translate(-50%, -50%);
 	width: 100%;
 	z-index: 10;
+	transition: .5s ease-in-out;
+}
+
+.fixed-tagline.move_right {
+	bottom: 2vh;
+	top: auto;
+	justify-content: flex-end;
+	align-items: flex-end;
+	transition: .5s ease-in-out;
 }
 
 .inner_container.relative_positioning {
