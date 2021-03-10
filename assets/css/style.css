@@ -2811,7 +2811,6 @@ header.shrink .inner_container {
 .splash, .splash > .inner_container {
 	height: 100vh;
 	position: relative;
-	overflow: hidden;
 }
 
 .splash > .inner_container {
@@ -2868,7 +2867,7 @@ header.shrink .inner_container {
 }
 
 .header-transition > .fixed-tagline {
-	position: fixed;
+	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
@@ -2878,7 +2877,6 @@ header.shrink .inner_container {
 }
 
 .fixed-tagline.move_right {
-	bottom: 2vh;
 	top: auto;
 	justify-content: flex-end;
 	align-items: flex-end;
@@ -2898,9 +2896,11 @@ header.shrink .inner_container {
 	padding-top: 0;
 }
 
+/*
 .intro_container {
 	padding-top: 152px;
 }
+*/
 
 .intro_container.relative_positioning {
 	margin-top: 0px;

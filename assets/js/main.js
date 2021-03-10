@@ -58,6 +58,7 @@
 			});
 			*/
 			
+			/*
 			var $document = $(document),
 			viewportHeight = $('.splash').height() / 2;
 			$document.scroll(function() {
@@ -85,12 +86,34 @@
 					$('header').removeClass('shrink');
 				}
 			});
+			*/
+			
+			var $document = $(document);
+			//viewportHeight = $('.splash').height() / 2;
+			$document.scroll(function() {
+				if ( $document.scrollTop() >= 50 ) {
+					$('body').addClass('scroll');
+					//$('.ghost').addClass('reveal');
+					//$('.header-transition > .inner_container').addClass('transition');
+					//$('.ghost').addClass('switch');
+					//$('.header-transition > .inner_container').addClass('relative_positioning');
+					//$('.intro_container').addClass('relative_positioning');
+					$('header').addClass('shrink');
+				} else {
+				    //$('.ghost').removeClass('reveal');
+					//$('.header-transition > .inner_container').removeClass('transition');
+					$('body').removeClass('scroll');
+					//$('.ghost').removeClass('switch');
+					//$('.header-transition > .inner_container').removeClass('relative_positioning');
+					//$('.intro_container').removeClass('relative_positioning');
+					$('header').removeClass('shrink');
+				}
+			});
 			
 			// ANIMATE ON SCROLL
 			AOS.init();
 			
 			setTimeout(function() {
-				
 				$('.splash_title').removeClass('aos-animate').addClass('move_right');
 			}, 2500);
 			
