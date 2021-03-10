@@ -2753,7 +2753,7 @@ header.visible {
 	left: 0;
 	width: 100%;
 	position: absolute;
-	z-index: 2;
+	z-index: 99;
 }
 
 .logo img {
@@ -2811,6 +2811,7 @@ header.shrink .inner_container {
 .splash, .splash > .inner_container {
 	height: 100vh;
 	position: relative;
+	overflow: hidden;
 }
 
 .splash > .inner_container {
@@ -2830,6 +2831,7 @@ header.shrink .inner_container {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	z-index: 999;
 }
 
 .splash_title {
@@ -2868,12 +2870,16 @@ header.shrink .inner_container {
 
 .header-transition > .fixed-tagline {
 	position: absolute;
-	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	transform: translate(-50%, 0);
 	width: 100%;
 	z-index: 10;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	transition: .5s ease-in-out;
+	text-align: center;
 }
 
 .fixed-tagline.move_right {
@@ -2881,6 +2887,10 @@ header.shrink .inner_container {
 	justify-content: flex-end;
 	align-items: flex-end;
 	transition: .5s ease-in-out;
+}
+
+.move_right .splash_title {
+	margin-bottom: 1.5em;
 }
 
 .inner_container.relative_positioning {
